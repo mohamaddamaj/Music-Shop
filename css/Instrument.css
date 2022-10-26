@@ -1,0 +1,282 @@
+/* start global Rule */
+:root {
+  --bs-primary: #212529;
+  --bs-secondary: #3f5efb;
+  --bs-light: #f8f9fa;
+  --bs-dark: #fc466b;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+  --main-duration: 0.5s;
+}
+
+/*-----------------------------------------------------------
+      3. General Styles
+  -------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.special-heading {
+  text-align: center;
+  margin-bottom: var(--section-padding);
+}
+.special-heading h1 {
+  position: relative;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+.special-heading h1::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 2px;
+  background-color: #ddd;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.special-heading h1::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: var(--bs-primary);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.special-heading p {
+  color: #777;
+}
+@media (max-width: 767px) {
+  .special-heading h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 340px) {
+  .special-heading h1 {
+    font-size: 35px;
+  }
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/*-----------------------------------------------------------
+    15. Footer
+-------------------------------------------------------------*/
+footer {
+  background-color: black;
+  padding-top: var(--section-padding);
+  padding-bottom: calc(var(--section-padding) / 2);
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 50px;
+  color: white;
+}
+footer .container .col {
+  font-size: 14px;
+  padding: 0 10px;
+}
+footer .container .col p:nth-of-type(1).logo {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+footer .container .col p:nth-of-type(1).logo span {
+  border-bottom: 5px solid var(--main-color);
+}
+footer .container .col p:nth-of-type(1) {
+  margin: 30px 0;
+  line-height: 1.8;
+}
+footer .container .col p:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+footer .container .col a.logo,
+footer .container .col h3 {
+  margin-bottom: 30px;
+  background: linear-gradient(to right, var(--bs-primary), var(--bs-secondary));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .container .col a.logo {
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: white;
+}
+footer .container .col a.logo span {
+  font-size: 25px;
+  font-family: cursive;
+  margin-right: 2px;
+}
+footer .container .col nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+}
+footer .container .col ul.social {
+  display: flex;
+}
+@media (max-width: 991px) {
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  footer .container .col img,
+  footer .container .col p + a {
+    margin: 0 auto;
+  }
+  footer .container .col ul.social {
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+footer .container .col ul.social li {
+  margin-right: 20px;
+}
+footer .container .col ul.social li a {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: var(--main-duration);
+}
+footer .container .col ul.social li a i {
+  font-size: 20px;
+  color: var(--bs-primary);
+  transition: var(--main-duration);
+}
+footer .container .col ul.social li:hover a {
+  background-color: var(--bs-primary);
+}
+footer .container .col ul.social li:hover span,
+footer .container .col ul.social li:hover a i {
+  color: white;
+  transform: scale(1.1);
+}
+footer .container .col ul.social li:hover span::before,
+footer .container .col ul.social li:hover span::after {
+  background-color: white;
+}
+footer .container .col ul.social li span {
+  display: block;
+  font-size: 30px;
+  font-family: serif;
+  color: var(--bs-primary);
+  margin-top: -10px;
+  margin-left: -5px;
+  position: relative;
+  transition: var(--main-duration);
+}
+footer .container .col ul.social li span::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 8px;
+  background-color: var(--bs-primary);
+  top: 50%;
+  right: -4px;
+  margin-top: -4px;
+  transition: var(--main-duration);
+}
+footer .container .col ul.social li span::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  background-color: var(--bs-primary);
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--main-duration);
+}
+footer form {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+footer form input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid white;
+  margin: -12px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+footer form input[type="email"]:focus {
+  outline: none;
+}
+footer form input[type="submit"] {
+  margin: -12px -12px -12px 0;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  background: linear-gradient(to right, var(--bs-primary), var(--bs-secondary));
+  border-radius: 0 5px 5px 0;
+  font-size: 17px;
+  cursor: pointer;
+  transition: var(--main-duration);
+}
+footer form input[type="submit"]:hover {
+  background: linear-gradient(to top, var(--bs-primary), var(--bs-secondary));
+}
+@media (max-width: 767px) {
+  footer form input[type="submit"] {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,396 @@
+
+
+<!Doctype html>
+<html>
+<head>
+<title> Violon</title>
+<meta charset="utf-8">
+<!-- image title -->
+<link rel="icon" href="../images/Background/8.png" type="image/icon type" />
+<!-- !!!! -->
+<link rel="stylesheet" type="text/css" href="../css/nav-bar.css"/>
+<link rel="stylesheet" type="text/css" href="../css/styles-2.css"/>
+<link rel="stylesheet" type="text/css" href="../css/category.css"/>
+<link rel="stylesheet" type="text/css" href="../css/Instrument.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../js/scrollheader.js" type="text/javascript"></script>
+<script src="../js/shop.js" type="text/javascript"></script>
+<script src="../js/range.js" type="text/javascript"></script>
+<style>
+
+</style>
+</head>
+
+<body>
+	<header class="top-header">
+			<div class="message">
+				<span>Welcome to Music shop <label>Vio</label>lon</span>
+			</div>
+			<div class="top-header-setting">
+				<ul>
+					<li class="dropdown">Language<i class="fa fa-angle-down"></i>
+						<div class="dropdown-content">
+							 <ul>
+								<li><a href="#"><img src="../images/flag/en.png" alt="flag">English</a></li>
+								<li><a href="#"><img src="../images/flag/fr.png" alt="flag">French</a></li>
+								<li><a href="#"><img src="../images/flag/sa.png" alt="flag">Arabic</a></li>
+								<li><a href="#"><img src="../images/flag/hi.png" alt="flag">Hindi</a></li>
+							 </ul>
+						 </div></li>
+					<li class="dropdown">Currency<i class="fa fa-angle-down"></i>
+						<div class="dropdown-content">
+							<ul>
+									<li><a href="#">$ USD</a></li>
+									<li><a href="#">€ EURO</a></li>
+									<li><a href="#">LL LBP</a></li>
+									<li><a href="#">₹ INR</a></li>
+							</ul>
+					</div></li>
+				</ul>
+			</div>
+		</header>
+		<!-- nav bar header-->
+<!-- -->
+
+		<header id="navbar" class="header-nav-bar">
+			<figure style="margin-left: 40px;float:left;">
+				<img src="../images/Background/8.png" width="100px" height="50px"/>
+				<figcaption>
+					<span style="padding-left: 10px;font-size:20px;font-family:cursive;;"><label style="color:blue;">Vio</label>lon</span>
+				</figcaption>
+		</figure>
+			<div class="menu-bar" style="float:left">
+				<ul>
+				  <li><a href='../index.html'>Home</a></li>
+				  <li><a href="#category">Shop</a>
+          </li>
+				  <li><a href="#">About Us</a></li>
+				  <li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="row"style="float:right">
+				 <ul>
+						<li ><label class="icon-search" for="search_box"><i class="fa fa-search" aria-hidden="true"></i></label>
+							<div class="search">
+								 <input class="search_box" type="checkbox" id="search_box">
+								 <div class="search_form">
+								<form action="#">
+									<input type="text" placeholder="search here..." name="search"><input type="submit" value="Go">
+								</form>
+								</div>
+							</div>
+						 </li>
+
+						 <li id="user-o">
+						   <label class="link"><i class="fa fa-user-o" aria-hidden="true"></i></label>
+						     <div class="dropdown-content">
+						       <ul>
+						           <li><a href="Login.html">login</a></li>
+						           <li><a href="register.html">register</a></li>
+						           <li><a href="my-account.html">my account</a></li>
+						       </ul>
+						     </div>
+						 </li>
+
+							<li id="heart"><span class="link"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+							<div class="notification"></div></li>
+					</ul>
+			</div>
+		</header>
+		 <div class="sub-header">
+        <div class="centered">
+            <h1>Category</h1>
+            <p class="directory"><a href="../index.html"><i class="fa fa-home"></a></i>/  <span>Shop Music</span></p>
+        </div>
+    </div>
+	
+	<div class="main-category">
+		<img src="../images/Background/9.jpg" class="banner" alt="flower sales" title="banner-image">
+			<div class="categories">
+			<h4>Summary Of Our Shop Content</h4>
+			<ul>
+			<li>Guitars<i class="fa fa-angle-down" aria-hidden="true"></i>
+			<div class="sub-category-1">
+				<ul>
+					<li><a href="http://127.0.0.1:5500/pages/Guitar.html">Classical Guitars </a></li>
+					<li><a href="http://127.0.0.1:5500/pages/Guitar.html">Acoustic Guitars</a></li>
+				</ul>
+				</div>
+			 </li>
+			<li class="bride">Piano<i class="fa fa-angle-down" aria-hidden="true"></i>
+			<div class="sub-category-1">
+			 <ul>
+			    <li> <a href="http://127.0.0.1:5500/pages/piano.html#">Acoustic Piano</a></li>
+				<li><a href="http://127.0.0.1:5500/pages/piano.html#">Digital Piano</a></li>
+			</ul>
+		   </div>
+		  </li>
+		 <li><a href="http://127.0.0.1:5500/pages/Wind.html">Winds</a></li>
+		 <li><a href="http://127.0.0.1:5500/pages/Oriental.html">Oriental Instruments(Only Oud Currently)</a></li>
+		 <li><a href="http://127.0.0.1:5500/pages/Violon.html">Violin& It's Family </a></li>
+		  </ul>
+		  <div class="range">
+		  <h3>Price Filter</h3>
+			<div class="slidecontainer">
+				  <input type="range" min="1000" max="10000" value="1000" class="slider" id="myRange">
+				  <input type="range" min="10000" max="100000" value="10000" class="slider" id="my2Range">
+				  </div>
+				  <p>Value:  $<span id="demo"></span> - $<span id="demo2"></span></p>
+				  <input class="filter" type="submit" value="Filter">
+		  </div>
+		</div>
+<div class="images-1">
+
+	<div class="header">
+		<div class="list-view">
+			<button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+			<button class="btn active" onclick="gridView()"><i class="fa fa-th"></i> Grid</button>
+		</div>
+		
+		<div class="data-list">
+			<form>
+					<select name="Sort-by">
+						<option selected value="Relevance">Relevance</option>
+						<option value="Name(A-Z)">Name(A-Z)</option>
+						<option value="Name(Z-A)">Name(Z-A)</option>
+						<option value="Price(Low>High)">Price(Low>High)</option>
+						<option value="Rating">Rating</option>
+						<option value="Model(A-Z)">Model(A-Z)"></option>
+						<option value="Model(A-Z)">Model(A-Z)</option>
+					</select>
+			</form>
+		</div>
+	</div>
+	<div class="row-3">
+		<div class="shop-item products">
+			<div class="hov">
+				<img class="shop-item-image" src="../images/violon/1.jpg" alt="Evergreen Candytuft">
+				<div class="pn">
+					<button class="btn btn-primary shop-item-button" type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+					<span class="comments">add to cart</span>
+				</div>
+			</div>
+			<span class="shop-item-title">Altima Violin 4/4</span>
+			<div class="shop-item-details price">
+				<span class="shop-item-price">$150.00</span><del>$170.00</del>
+			</div>
+		</div>
+		
+		<div  class="shop-item products">
+			<div class="hov">
+				<img class="shop-item-image" src="../images/violon/2.jpg" alt="Flowers Bouquet Pink">
+				<div class="pn">
+					<button class="btn btn-primary shop-item-button" type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+					<span class="comments">add to cart</span>
+				</div>
+			</div>
+			<span class="shop-item-title">SONOR Violin 1/4 Pink</span>
+			<div class="shop-item-details price">
+				<span class="shop-item-price">$40.00</span><del>$60.00</del>
+			</div>
+		</div>
+		
+		<div class="shop-item products">
+			<div class="hov">
+				<img class="shop-item-image" src="../images/violon/3.jpg" alt="Dutchman's Breeches" >
+				<div class="pn">
+					<button class="btn btn-primary shop-item-button"type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+					<span class="comments">add to cart</span>
+				</div>
+			</div>
+			<span class="shop-item-title">Guanerri Vintage Violin</span>
+			<div class="shop-item-details price">
+				<span class="shop-item-price">$3800.00</span><del>$5000.00</del>
+			</div>
+		</div>
+	</div>
+	<div class="row-3">
+		<div  class="shop-item products">
+			<div class="hov">
+				<img class="shop-item-image" src="../images/violon/4.jpg" alt="Yellow Loosestrife">
+				<div class="pn">
+					<button class="btn btn-primary shop-item-button" type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+					<span class="comments">add to cart</span>
+				</div>
+			</div>
+			<span class="shop-item-title">Stradivarius Copy A Violin</span>
+			<div class="price">
+				<span class="shop-item-price">$2100.50</span><del>$3020.00</del>
+			</div>
+		</div>
+		
+		<div  class="shop-item products">
+			<div class="hov">
+				<img class="shop-item-image" src="../images/violon/5.jpg" alt="Yellow Loosestrife">
+				<div class="pn">
+					<button class="btn btn-primary shop-item-button" type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+					<span class="comments">add to cart</span>
+				</div>
+			</div>
+			<span class="shop-item-title">Stradivarius Copy A Violin</span>
+			<div class="price">
+				<span class="shop-item-price">$2100.50</span><del>$3020.00</del>
+			</div>
+		</div>
+		
+		<div  class="shop-item products">
+			<div class="hov">
+				<img class="shop-item-image" src="../images/violon/6.jpg" alt="Golden Margueritespan">
+				<div class="pn">
+					<button class="btn btn-primary shop-item-button" type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+					<span class="comments">add to cart</span>
+				</div>
+			</div>
+			<span class="shop-item-title">Sonor 4/4 Violin</span>
+			<div class="price">
+				<span class="shop-item-price">$75.00</span></span><del>$95.00</del>
+			</div>
+		</div>
+		</div>
+		<div class="row-3">
+		<div  class="shop-item products"> 
+			<div class="hov">
+				<img class="shop-item-image" src="../images/violon/7.jpg" alt="Pearly Everlasting">
+				<div class="pn">
+					<button class="btn btn-primary shop-item-button" type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+					<span class="comments">add to cart</span>
+				</div>
+			</div>
+			<span class="shop-item-title">Altima 4/4 Student Violin 4/4</span>
+			<div class="price">
+				<span class="shop-item-price">$195.00</span><del>$215.00</del>
+			</div>
+		</div>
+		<div class="shop-item products">
+			<div class="hov">
+					<img class="shop-item-image" src="../images/violon/8.jpg" alt="vibrant_summer_vase" height="278.7px">
+					<div class="pn">
+						<button class="btn btn-primary shop-item-button" type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+						<span class="comments">add to cart</span>
+					</div>
+			</div>
+				<span class="shop-item-title">Hofman 4/4 Violin</span>
+				<div class="shop-item-details price">
+					<span class="shop-item-price">$70.00</span><del>$95.00</del>
+				</div>
+		</div>
+		<div class="shop-item products">
+				<div class="hov">
+					<img class="shop-item-image" src="../images/violon/9.jpg" alt="vibrant_summer_vase" height="278.7px">
+					<div class="pn">
+						<button class="btn btn-primary shop-item-button" type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+						<span class="comments">add to cart</span>
+					</div>
+			</div>	
+			<span class="shop-item-title">Karl Hofner 4/4 Violin</span>
+			<div class="shop-item-details price">
+				<span class="shop-item-price">$730.00</span><del>$950.00</del>
+			</div>
+		</div>
+		</div>
+		<div class="next">
+			<ul>
+					<li><a href="#">&laquo; Prev</a></li>
+					<li class="num"><a  href="#">1</a></li>
+					<li class="num"><a href="#">2</a></li>
+					<li class="num"><a href="#">3</a></li>
+					<li class="num"><a href="#">...</a></li>
+					<li class="num"><a href="#">10</a></li>
+					<li><a href="#">Next &raquo;</a></li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+ <!-- Start Footer Section -->
+ <!-- <footer>
+  <div class="container">
+    <div class="col">
+      <a class="logo" href="#">
+        <span>Mohamad, Hassan, Hala, Housam </span></a
+      >
+      <p>Created by <span>Mohamad, Hassan, Hala, houssam</span></p>
+      <p>
+        &copy; <span id="currentDate"></span> -Mohamad, Hassan, Hala,
+        houssam
+      </p>
+    </div>
+    <div class="col">
+      <h3>Links</h3>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Team work</a></li>
+          <li><a href="#">Instrument</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col">
+      <h3>Join Our Newsletter</h3>
+      <form action="" method="post">
+        <input type="email" name="email" />
+        <input type="submit" value="Subscribe" />
+      </form>
+      <nav>
+        <ul class="social">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><span>g</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer> -->
+	<script>
+var elements = document.getElementsByClassName("products");
+var i;
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "25%";
+  }
+}
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<script>
+var x = document.getElementById("myRange");
+var y = document.getElementById("demo");
+y.innerHTML = x.value;
+
+x.oninput = function() {
+  y.innerHTML = this.value;
+}
+</script>
+<script>
+var slider = document.getElementById("my2Range");
+var output = document.getElementById("demo2");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+</body>
+</html>

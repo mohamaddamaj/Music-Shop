@@ -1,0 +1,139 @@
+
+.container-5 {
+    max-width: 500px;
+    margin: 0;
+    padding: 0;
+	font-size:15px;
+}
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.15em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+	padding-left: 30px;
+}
+span.cart-price.cart-header.cart-column{
+	padding-left: 5px;
+}
+.cart-quantity {
+    width: 35%;
+	margin-right: 4px;
+}
+
+.cart-item-title-1 {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: black;
+	background-color:white;
+	border:none;
+	font-size:20px;
+    font-weight: bold;
+	margin-left:20px;
+}
+
+.btn-danger:hover {
+   color:red;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+.cart-quantity input[type="number"]{
+	width: 35px;
+margin-right: 10px;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+.container-5.content-section{
+	display:none;
+	border:2p solid;
+	z-index:9999;
+	position:absolute;
+	right:80px;
+	top:75px;
+	background-color:white;
+	box-shadow:0px 0px 5px;
+	
+	}
+img.cart-item-image{
+    margin-left: 0px;
+    margin-top: 20px;
+}
+#shopping:hover .container-5.content-section{
+	display: block;
+}
+.sub-category-1 a:hover{
+	color:red;
+}
